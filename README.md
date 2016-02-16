@@ -1,5 +1,5 @@
 <p align="center" >
-<img src="AppIcon" alt="APColorMemory" title="APColorMemory" width="196">
+<img src="APColormemoryIcon.png" alt="APColorMemory" title="APColorMemory" width="196">
 </p>
 
 
@@ -8,7 +8,7 @@ APColorMemory game for iOS written in Swift
 
 Preview
 -------
-![Screenshot](https://raw.githubusercontent.com/ArunPrasanth-R/APColorMemory/Master/APColorMemory/ColorMemory/Resource/ScreenShot_1.png)    ![Screenshot](https://raw.githubusercontent.com/ArunPrasanth-R/APColorMemory/Master/APColorMemory/ColorMemory/Resource/ScreenShot_2.png) ![Screenshot](https://raw.githubusercontent.com/ArunPrasanth-R/APColorMemory/Master/APColorMemory/ColorMemory/Resource/ScreenShot_3.png)
+![Screenshot](https://raw.githubusercontent.com/ArunPrasanth-R/APColorMemory/Master/ColorMemory/Resource/ScreenShot_1.png)    ![Screenshot](https://raw.githubusercontent.com/ArunPrasanth-R/APColorMemory/Master/ColorMemory/Resource/ScreenShot_2.png) ![Screenshot](https://raw.githubusercontent.com/ArunPrasanth-R/APColorMemory/Master/ColorMemory/Resource/ScreenShot_3.png)
 
 Demo
 ----
