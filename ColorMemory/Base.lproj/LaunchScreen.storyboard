@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,8 +16,67 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="kOl-py-PDO">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppLogo" translatesAutoresizingMaskIntoConstraints="NO" id="dxX-Tu-XhL">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="erZ-cB-V1E"/>
+                                    <constraint firstAttribute="width" constant="210" id="nFR-9I-fPS"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="erZ-cB-V1E"/>
+                                        <exclude reference="nFR-9I-fPS"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="erZ-cB-V1E"/>
+                                        <include reference="nFR-9I-fPS"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dxX-Tu-XhL" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="35" id="N37-5K-DWJ"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="kOl-py-PDO" secondAttribute="bottom" id="Ucj-R8-tyn"/>
+                            <constraint firstItem="kOl-py-PDO" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="dgG-fB-eEp"/>
+                            <constraint firstAttribute="trailing" secondItem="kOl-py-PDO" secondAttribute="trailing" id="gMW-dq-wVd"/>
+                            <constraint firstItem="dxX-Tu-XhL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="rKt-Uq-TFF"/>
+                            <constraint firstItem="kOl-py-PDO" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="wIi-xf-z9y"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="kOl-py-PDO"/>
+                                <exclude reference="dxX-Tu-XhL"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Ucj-R8-tyn"/>
+                                <exclude reference="N37-5K-DWJ"/>
+                                <exclude reference="rKt-Uq-TFF"/>
+                                <exclude reference="dgG-fB-eEp"/>
+                                <exclude reference="gMW-dq-wVd"/>
+                                <exclude reference="wIi-xf-z9y"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="kOl-py-PDO"/>
+                                <include reference="dxX-Tu-XhL"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Ucj-R8-tyn"/>
+                                <include reference="N37-5K-DWJ"/>
+                                <include reference="rKt-Uq-TFF"/>
+                                <include reference="dgG-fB-eEp"/>
+                                <include reference="gMW-dq-wVd"/>
+                                <include reference="wIi-xf-z9y"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +84,8 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AppLogo" width="100" height="40"/>
+        <image name="bg.png" width="722" height="1200"/>
+    </resources>
 </document>
